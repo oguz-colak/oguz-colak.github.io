@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Oğuz Çolak / Kütüphaneci"
 title_separator          : "-"
 name                     : &name "Oğuz Çolak"
 description              : &description "Koleksiyon ve E-Kaynak Kütüphanecisi, MLIS."
@@ -22,11 +22,11 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "images/oguz_bio.jpg"
   name             : "Oğuz"
-  pronouns         : # example: "she/her"  
+  pronouns         : # example: "he/him"  
   bio              : "Açık bilim, e-kaynaklar ve kütüphanecilik üzerine olan konularla yakından ilgili."
-  location         : "Türkiye"
+  location         : "İstanbul,Türkiye"
   employer         : "T.C Kültür ve Turizm Bakanlığı"
   uri              : # URL
   email            : "oguz.colak@ktb.gov.tr" 
@@ -36,7 +36,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=HyAe16kAAAAJ&hl=tr"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0002-5551-5461"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : # URL
