@@ -63,5 +63,15 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    line-height: 1.2;
+    white-space: normal;
   }
+}
+
+.masthead__subtitle {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+  margin-top: 0.1em;
 }
