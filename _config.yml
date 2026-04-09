@@ -9,13 +9,13 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Oğuz Çolak / Kütüphaneci"
+title                    : "Oğuz Çolak | Dijital Kütüphaneci"
 title_separator          : "-"
 name                     : &name "Oğuz Çolak"
-description              : &description "Koleksiyon ve E-Kaynak Kütüphanecisi, MLIS."
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+description              : &description "Bilgi ve belge yönetimi, dijital kütüphaneler ve açık bilim üzerine çalışmalar"
+url                      : https://oguz-colak.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "oguz-colak/oguz-colak.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -23,10 +23,10 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "images/oguz_bio.jpg"
-  name             : "Oğuz"
+  name             : "Oğuz Çolak"
   pronouns         : # example: "he/him"  
-  bio              : "Açık bilim, e-kaynaklar ve kütüphanecilik üzerine olan konularla yakından ilgili."
-  location         : "İstanbul,Türkiye"
+  bio              : "Bilgi ve belge yönetimi, dijital kütüphaneler ve açık bilim üzerine çalışmalar."
+  location         : "İstanbul, Türkiye"
   employer         : "T.C Kültür ve Turizm Bakanlığı"
   uri              : # URL
   email            : "oguz.colak@ktb.gov.tr" 
@@ -46,13 +46,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "oguz-colak"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -85,6 +85,8 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  theses:
+    title: 'Theses'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
