@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "he/him"  
   bio              : "Bilgi ve belge yönetimi, dijital kütüphaneler ve açık bilim üzerine çalışmalar."
   location         : "İstanbul, Türkiye"
-  employer         : "T.C Kültür ve Turizm Bakanlığı"
+  employer         : "T.C. Kültür ve Turizm Bakanlığı, Rami Kütüphanesi"
   uri              : # URL
   email            : "oguz.colak@ktb.gov.tr" 
 
@@ -38,7 +38,6 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0002-5551-5461"
   semantic         : # URL
-  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
 
@@ -52,7 +51,6 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
