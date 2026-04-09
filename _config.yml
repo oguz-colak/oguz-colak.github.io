@@ -22,7 +22,7 @@ repository               : "oguz-colak/oguz-colak.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/oguz_profile.jpg"
+  avatar           : "profile.jpg"
   name             : "Oğuz Çolak"
   pronouns         : # example: "he/him"  
   bio              : "Bilgi ve belge yönetimi, dijital kütüphaneler ve açık bilim üzerine çalışmalar."
