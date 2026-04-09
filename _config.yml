@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Oğuz Çolak | Dijital Kütüphaneci"
+title                    : "Oğuz Çolak"
 title_separator          : "-"
 name                     : &name "Oğuz Çolak"
 description              : &description "Bilgi ve belge yönetimi, dijital kütüphaneler ve açık bilim üzerine çalışmalar"
@@ -202,7 +202,6 @@ excerpt_separator: "\n\n"
 incremental: false
 
 
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
