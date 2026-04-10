@@ -9,7 +9,7 @@
 
 main:
   - title: "Yayınlarım"
-    url: /publications/
+    url: /yayinlarim/
         
   - title: "Blog Yazıları"
     url: /year-archive/
