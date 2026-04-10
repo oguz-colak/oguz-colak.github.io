@@ -1,0 +1,133 @@
+/* CV Page Styles */
+
+.cv-section {
+  margin-bottom: 3em;
+}
+
+.cv-section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+
+  i {
+    font-size: 0.9em;
+    color: #555;
+  }
+}
+
+.cv-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+  
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.cv-date {
+  font-size: 0.9em;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 5px;
+  min-width: 150px;
+  
+  @media (min-width: 768px) {
+    text-align: right;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+}
+
+.cv-content {
+  flex: 1;
+}
+
+.cv-title {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.cv-institution {
+  font-weight: 600;
+  color: #1a73e8; /* Professional Academic Blue */
+  margin-bottom: 5px;
+}
+
+.cv-details {
+  font-size: 0.95em;
+  color: #444;
+  line-height: 1.6;
+}
+
+.cv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-list-item {
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+  
+  &:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1a73e8;
+  }
+}
+
+/* Call to Action Button */
+.cv-cta-section {
+  margin-top: 4em;
+  text-align: center;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.btn--cv-publications {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff !important;
+  text-decoration: none !important;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+  
+  &:hover {
+    background-color: #000;
+  }
+}
+
+/* Dark Mode Overrides */
+html[data-theme="dark"] {
+  .cv-section-title {
+    border-bottom-color: #555;
+    color: #eee;
+    i { color: #aaa; }
+  }
+  .cv-date { color: #aaa; }
+  .cv-title { color: #eee; }
+  .cv-institution { color: #8ab4f8; }
+  .cv-details { color: #ccc; }
+  .cv-cta-section { background: #1a1a1a; border-color: #333; }
+  .btn--cv-publications { background-color: #eee; color: #111 !important; &:hover { background-color: #fff; } }
+}

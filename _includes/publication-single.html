@@ -61,7 +61,7 @@
           <span>BibTeX</span>
           <button onclick="copyToClipboard('bibtex-content-{{ post.url | slugify }}')">Copy</button>
         </div>
-        <pre id="bibtex-content-{{ post.url | slugify }}">@article{{ '{' }}{{ post.url | slugify }},
+        <pre id="bibtex-content-{{ post.url | slugify }}">@{{ post.bibtype | default: 'article' }}{{ '{' }}{{ post.url | slugify }},
   title={ {{ post.title }} },
   author={ {{ post.authors | join: " and " }} },
   journal={ {{ post.journal | default: post.venue }} },
