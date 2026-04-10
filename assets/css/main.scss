@@ -42,3 +42,27 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* --- FOOTER & SIDEBAR OVERLAP FIX --- */
+
+/* 1. Force main content to take at least full viewport height to push footer down */
+#main {
+    min-height: 100vh !important; 
+}
+
+/* 2. Prevent the sticky sidebar from bleeding into the footer by restricting its height and making it scrollable */
+.sidebar, .author__profile {
+    max-height: calc(100vh - 100px) !important; 
+    overflow-y: auto !important; 
+}
+
+/* 3. Elegant, minimalist scrollbar styling for the sidebar */
+.sidebar::-webkit-scrollbar, .author__profile::-webkit-scrollbar {
+    width: 4px;
+}
+.sidebar::-webkit-scrollbar-thumb, .author__profile::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 4px;
+}
+.sidebar::-webkit-scrollbar-track, .author__profile::-webkit-scrollbar-track {
+    background: transparent;
+}
