@@ -105,7 +105,7 @@ redirect_from:
 
   <ul class="cv-list">
     <li class="cv-list-item"><b>Görünmeyeni Görünür Kılmak:</b> Rami Kütüphanesi Bağlı Açık Veri (Linked Open Data) Projesi.</li>
-    <li class="cv-list-item"><b>Rami Kütüphanecilik Seminerleri-I:</b> Bilgi ve Belge Yönetimi lisans öğrencileri için koordinatör olarak organize edildi.</li>
+    <li class="cv-list-item"><b>Rami Kütüphanecilik Seminerleri-I:</b> Bilgi ve Belge Yönetimi lisans öğrencileri için mesleki eğitim ve uygulama seminerleri organize edildi.</li>
   </ul>
 </div>
 
@@ -115,9 +115,9 @@ redirect_from:
   </div>
 
   <ul class="cv-list">
-    <li class="cv-list-item">Türk Kütüphaneciler Derneği (TKD) Üyesi (Nisan 2024 - Devam Ediyor).</li>
-    <li class="cv-list-item">Üniversite ve Araştırma Kütüphanecileri Derneği (ÜNAK) Üyesi (Ağustos 2021 - Devam Ediyor).</li>
-    <li class="cv-list-item">ASIS&T Orta Doğu Şubesi Üyelik Bursu Sahibi (2024-2025 Dönemi).</li>
+    <li class="cv-list-item">Türk Kütüphaneciler Derneği (TKD) Üyesi (Nisan 2024   -.</li>
+    <li class="cv-list-item">Üniversite ve Araştırma Kütüphanecileri Derneği (ÜNAK) Ağustos 2021   -.</li>
+    <li class="cv-list-item">ASIS&T Middle East Chapter Üyelik Bursu (2024-2025 Dönemi).</li>
   </ul>
 </div>
 

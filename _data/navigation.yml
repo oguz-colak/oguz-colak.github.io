@@ -8,13 +8,10 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Publications"
+  - title: "Yayınlarım"
     url: /publications/
-
-  - title: "Portfolio"
-    url: /portfolio/
         
-  - title: "Blog Posts"
+  - title: "Blog Yazıları"
     url: /year-archive/
     
   - title: "Özgeçmiş"
@@ -22,6 +19,3 @@ main:
     
   # - title: "CV"
   #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
