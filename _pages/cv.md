@@ -15,7 +15,7 @@ redirect_from:
   </div>
 
   <div class="cv-item">
-    <div class="cv-date">2021 - Nisan 2024</div>
+    <div class="cv-date">Eylül 2021 - Nisan 2024</div>
     <div class="cv-content">
       <div class="cv-title">Yüksek Lisans, Bilgi ve Belge Yönetimi</div>
       <div class="cv-institution">Çankırı Karatekin Üniversitesi</div>
@@ -24,7 +24,7 @@ redirect_from:
   </div>
 
   <div class="cv-item">
-    <div class="cv-date">2015 - 2019</div>
+    <div class="cv-date">Eylül 2015 - Haziran 2019</div>
     <div class="cv-content">
       <div class="cv-title">Lisans, Bilgi ve Belge Yönetimi</div>
       <div class="cv-institution">Çankırı Karatekin Üniversitesi</div>
@@ -61,7 +61,7 @@ redirect_from:
   </div>
 
   <div class="cv-item">
-    <div class="cv-date">Eylül - Kasım 2019</div>
+    <div class="cv-date">Eylül 2019 - Kasım 2019</div>
     <div class="cv-content">
       <div class="cv-title">Kütüphane Proje Asistanı</div>
       <div class="cv-institution">Refika'nın Mutfağı Gastronomi Kütüphanesi - İstanbul</div>
@@ -78,7 +78,7 @@ redirect_from:
   </div>
 
   <div class="cv-item">
-    <div class="cv-date">Haziran - Ağustos 2019</div>
+    <div class="cv-date">Haziran 2019 - Ağustos 2019</div>
     <div class="cv-content">
       <div class="cv-title">Kütüphane Stajyeri (Erasmus+)</div>
       <div class="cv-institution">Gdańsk Teknoloji Üniversitesi Kütüphanesi - Polonya</div>
@@ -89,7 +89,7 @@ redirect_from:
   </div>
 
   <div class="cv-item">
-    <div class="cv-date">Haziran - Ağustos 2018</div>
+    <div class="cv-date">Haziran 2018 - Ağustos 2018</div>
     <div class="cv-content">
       <div class="cv-title">Kütüphane Stajyeri</div>
       <div class="cv-institution">Ege Üniversitesi Merkez Kütüphanesi - İzmir</div>
