@@ -1,26 +1,25 @@
 ---
 layout: archive
-title: "Publications"
-permalink: /publications/
+title: "Yayınlarım"
+permalink: /yayinlarim/
 author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+<div class="wordwrap">Ayrıca <a href="{{site.author.googlescholar}}">Google Akademik profilimi</a> de ziyaret
+  edebilirsiniz.</div>
 {% endif %}
 
 {% include base_path %}
 
-{% assign publications_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{% assign publications_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date:
+'%Y'" %}
 
 {% for year in publications_by_year %}
-  <h2 id="{{ year.name }}" class="archive__subtitle">{{ year.name }}</h2>
-  <div class="list__wrapper">
-    {% for post in year.items %}
-      {% include publication-single.html %}
-    {% endfor %}
-  </div>
+<h2 id="{{ year.name }}" class="archive__subtitle">{{ year.name }}</h2>
+<div class="list__wrapper">
+  {% for post in year.items %}
+  {% include publication-single.html %}
+  {% endfor %}
+</div>
 {% endfor %}
-
-
-
