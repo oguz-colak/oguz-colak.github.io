@@ -7,6 +7,12 @@ excerpt: "Çankırı Karatekin Üniversitesi Bilgi ve Belge Yönetimi Bölümü'
 date: 2022-06-30
 venue: "Türk Kütüphaneciliği"
 paperurl: "https://doi.org/10.24146/tk.1084924"
+authors: ["Çetin Çapkın", "Erol Köksel", "Oğuz Çolak", "Şahika Yeşim Kılıç", "Berdan Yakar", "Mümtaz Özdemir"]
+journal: "Türk Kütüphaneciliği"
+volume: "36"
+number: "2"
+pages: "205-224"
+doi: "10.24146/tk.1084924"
 citation: "Çapkın, Ç., Köksel, E., Çolak, O., Kılıç, Ş. Y., Yakar, B., & Özdemir, M. (2022). &quot;Çankırı Karatekin Üniversitesi Bilgi ve Belge Yönetimi Bölümü Yüksek Lisans Tezlerinin Atıf Analizi.&quot; <i>Türk Kütüphaneciliği</i>, 36(2), 205-224. doi:10.24146/tk.1084924"
 ---
 

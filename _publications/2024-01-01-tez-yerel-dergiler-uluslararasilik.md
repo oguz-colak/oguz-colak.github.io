@@ -7,6 +7,11 @@ excerpt: "Çankırı Karatekin Üniversitesi Sosyal Bilimler Enstitüsü'nde tam
 date: 2024-01-01
 venue: "Yüksek Lisans Tezi"
 paperurl: "https://doi.org/10.31237/osf.io/49pty"
+authors: ["Oğuz Çolak"]
+institution: "Çankırı Karatekin Üniversitesi"
+school: "Sosyal Bilimler Enstitüsü"
+type: "Yüksek Lisans Tezi"
+doi: "10.31237/osf.io/49pty"
 citation: "Çolak, O. (2024). &quot;Yerel Bilimsel Dergilerin Uluslararasılığının Ölçülmesi.&quot; (Yüksek Lisans Tezi). Çankırı Karatekin Üniversitesi Sosyal Bilimler Enstitüsü. doi:10.31237/osf.io/49pty"
 ---
 

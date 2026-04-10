@@ -6,6 +6,8 @@ permalink: /publication/sci-hub-turkiye-analizi
 excerpt: "Türkiye'nin bilimsel yayın üretiminin Sci-Hub üzerindeki erişim oranları ve indirme istatistiklerinin analizi."
 date: 2026-04-09
 venue: "Çalışma Devam Ediyor"
+authors: ["Oğuz Çolak"]
+status: "Working Paper"
 paperurl: ""
 citation: "Çolak, O. (2026). &quot;Sci-Hub Verileri ve Türkiye Bilimsel Çıktıları.&quot; (Çalışma Devam Ediyor)."
 ---
