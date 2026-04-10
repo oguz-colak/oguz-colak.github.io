@@ -22,14 +22,15 @@
 }
 
 .cv-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 25px;
+  align-items: start;
   
   @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: flex-start;
+    grid-template-columns: 180px 1fr;
+    gap: 30px;
   }
 }
 
@@ -37,18 +38,15 @@
   font-size: 0.9em;
   color: #666;
   font-style: italic;
-  margin-bottom: 5px;
-  min-width: 150px;
   
   @media (min-width: 768px) {
     text-align: right;
-    margin-right: 25px;
-    margin-bottom: 0;
+    padding-top: 2px; /* Slight offset for perfect title alignment */
   }
 }
 
 .cv-content {
-  flex: 1;
+  /* Grid handles width and alignment */
 }
 
 .cv-title {
