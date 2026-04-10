@@ -1,9 +1,9 @@
 {% include base_path %}
 
 {% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
-  {% assign title = post.title %}
+{% assign title = post.title %}
 {% endif %}
 
 <div class="publication__item">
@@ -11,36 +11,37 @@
     <div class="publication__content">
       <h3 class="publication__title" itemprop="headline">
         {% if post.link %}
-          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i></a>
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i
+            class="fa fa-link" aria-hidden="true" title="permalink"></i></a>
         {% else %}
-          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
         {% endif %}
       </h3>
 
       <div class="publication__authors">
         {% if post.authors %}
-          {{ post.authors | join: ", " }}
+        {{ post.authors | join: ", " }}
         {% else %}
-          {{ site.author.name }}
+        {{ site.author.name }}
         {% endif %}
       </div>
 
       <div class="publication__venue">
         {% if post.venue %}
-          <i>{{ post.venue }}</i>, 
+        <i>{{ post.venue }}</i>,
         {% endif %}
         {{ post.date | date: "%Y" }}
       </div>
 
       {% if post.excerpt %}
-        <div class="publication__excerpt" itemprop="description">
-          {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
-        </div>
+      <div class="publication__excerpt" itemprop="description">
+        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+      </div>
       {% endif %}
 
       <div class="publication__actions">
         {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" class="btn btn--small btn--paper"><i class="fa fa-file-pdf"></i> PDF</a>
+        <a href="{{ post.paperurl }}" class="btn btn--small btn--paper"><i class="fa fa-file-pdf"></i> PDF</a>
         {% endif %}
 
         <button class="btn btn--small btn--cite" onclick="toggleBibtex('{{ post.url | slugify }}')">
@@ -49,11 +50,8 @@
 
         <button class="btn btn--small btn--ris" onclick="downloadRIS({
           title: '{{ post.title | escape }}',
-          authors: '{{ post.authors | join: ";" | escape }}',
-          year: '{{ post.date | date: "%Y" }}',
-          journal: '{{ post.journal | default: post.venue | escape }}',
-          doi: '{{ post.doi }}'
-        })">
+          authors: '{{ post.authors | join: " ;" | escape }}', year: '{{ post.date | date: "%Y" }}' ,
+          journal: '{{ post.journal | default: post.venue | escape }}' , doi: '{{ post.doi }}' })">
           <i class="fa fa-download"></i> Download RIS
         </button>
       </div>
@@ -72,7 +70,7 @@
   number={ {{ post.number }} }{% endif %}{% if post.pages %},
   pages={ {{ post.pages }} }{% endif %}{% if post.doi %},
   doi={ {{ post.doi }} }{% endif %}
-{{ '}' }}</pre>
+        }</pre>
       </div>
     </div>
   </article>
