@@ -7,7 +7,7 @@ excerpt: "Çankırı Karatekin Üniversitesi Bilgi ve Belge Yönetimi Bölümü'
 date: 2022-06-30
 venue: "Türk Kütüphaneciliği"
 paperurl: "https://doi.org/10.24146/tk.1084924"
-authors: ["Çetin Çapkın", "Erol Köksel", "Oğuz Çolak", "Şahika Yeşim Kılıç", "Berdan Yakar", "Mümtaz Özdemir"]
+authors: ["Çağdaş Çapkın", "Ebru Köksel", "Oğuz Çolak", "Şerife Yılmaz Kılıç", "Bengisu Yakar", "Mücahit Özdemir"]
 journal: "Türk Kütüphaneciliği"
 volume: "36"
 number: "2"
