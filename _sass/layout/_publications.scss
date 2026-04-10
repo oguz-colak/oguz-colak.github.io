@@ -54,33 +54,55 @@
 }
 
 .btn--small {
-  padding: 4px 10px;
-  font-size: 0.75em;
-  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.8em;
+  border-radius: 6px;
   text-transform: none;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  border: 1px solid #dadce0;
+  background-color: #f1f3f4;
+  color: #3c4043;
+  line-height: 1;
+
+  i {
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+
+  &:hover, &:focus {
+    background-color: #e8eaed;
+    border-color: #bdc1c6;
+    color: #202124;
+    outline: none;
+    box-shadow: 0 1px 2px rgba(60,64,67,0.1), 0 1px 3px 1px rgba(60,64,67,0.05);
+  }
+
+  &:active {
+    background-color: #dadce0;
+    box-shadow: none;
+    transform: translateY(1px);
+  }
 }
 
 .btn--paper {
-  background-color: #f0f0f0;
-  color: #d32f2f;
-  border: 1px solid #e0e0e0;
-  &:hover { background-color: #e0e0e0; }
+  color: #d93025;
+  &:hover, &:focus { color: #b21f16; }
 }
 
 .btn--cite {
-  background-color: #f0f0f0;
-  color: #1976d2;
-  border: 1px solid #e0e0e0;
-  &:hover { background-color: #e0e0e0; }
+  color: #1a73e8;
+  &:hover, &:focus { color: #174ea6; }
 }
 
 .btn--ris {
-  background-color: #f0f0f0;
-  color: #388e3c;
-  border: 1px solid #e0e0e0;
-  &:hover { background-color: #e0e0e0; }
+  color: #1e8e3e;
+  &:hover, &:focus { color: #137333; }
 }
 
 .publication__bibtex {
@@ -115,13 +137,45 @@
   }
 }
 
-/* Dark mode adjustments if needed */
-.theme--dark {
-  .publication__title a { color: #eee; }
-  .publication__authors { color: #aaa; }
-  .publication__venue { color: #ccc; }
-  .publication__excerpt { color: #bbb; }
-  .publication__bibtex { background-color: #1a1a1a; border-color: #333; }
-  .publication__bibtex .bibtex-header { border-color: #333; color: #aaa; }
-  .btn--paper, .btn--cite, .btn--ris { background-color: #222; border-color: #444; }
+/* Dark mode adjustments */
+html[data-theme="dark"] {
+  .publication__title a { color: #e8eaed; }
+  .publication__authors { color: #9aa0a6; }
+  .publication__venue { color: #bdc1c6; }
+  .publication__excerpt { color: #9aa0a6; }
+  .publication__bibtex { 
+    background-color: #202124; 
+    border-color: #3c4043;
+    color: #e8eaed;
+  }
+  .publication__bibtex .bibtex-header { 
+    border-color: #3c4043; 
+    color: #9aa0a6; 
+    button {
+      background: #3c4043;
+      border-color: #5f6368;
+      color: #e8eaed;
+      &:hover { background: #4f5357; }
+    }
+  }
+
+  .btn--small {
+    background-color: #3c4043;
+    border-color: #5f6368;
+    color: #e8eaed;
+
+    &:hover, &:focus {
+      background-color: #4f5357;
+      border-color: #70757a;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: #5f6368;
+    }
+  }
+
+  .btn--paper { color: #f28b82; &:hover, &:focus { color: #f6aea9; }}
+  .btn--cite { color: #8ab4f8; &:hover, &:focus { color: #aecbfa; }}
+  .btn--ris { color: #81c995; &:hover, &:focus { color: #a8dab5; }}
 }
