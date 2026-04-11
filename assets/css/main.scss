@@ -66,3 +66,10 @@
 .sidebar::-webkit-scrollbar-track, .author__profile::-webkit-scrollbar-track {
     background: transparent;
 }
+
+/* Global Justification for Page Content */
+.page__content p, 
+.page__content li {
+    text-align: justify !important;
+    text-justify: inter-word;
+}
