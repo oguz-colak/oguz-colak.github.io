@@ -7,12 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Ben Oğuz Çolak. İstanbul Rami Kütüphanesi'nde kütüphaneci olarak görev yapmaktayım. Bilgi ve belge yönetimi disiplininin teknolojik dönüşümü, verinin dijital ortamlardaki sürdürülebilirliği ve bilginin keşfedilebilirliği üzerine akademik ve profesyonel projeler yürütmekteyim.
+<p>Ben Oğuz Çolak. İstanbul Rami Kütüphanesi'nde kütüphaneci olarak görev yapmaktayım. Bilgi ve belge yönetimi disiplininin teknolojik dönüşümü, verinin dijital ortamlardaki sürdürülebilirliği ve bilginin keşfedilebilirliği üzerine akademik ve profesyonel projeler yürütmekteyim.</p>
 
-İlgi Alanlarım
-======
+<h2>İlgi Alanlarım</h2>
 
-Mesleki ve akademik çalışmalarımın merkezinde yer alan temel disiplinleri şu şekilde özetleyebilirim:
+<p>Mesleki ve akademik çalışmalarımın merkezinde yer alan temel disiplinleri şu şekilde özetleyebilirim:</p>
 
 <div x-data="{ active: null }" class="accordion" style="margin-bottom: 2em; margin-top: 1.5em;">
 <div class="accordion-item" style="border: 1px solid #e0e0e0; margin-bottom: 10px; border-radius: 5px; overflow: hidden;">
@@ -57,4 +56,4 @@ Bağlı Veri (Linked Data) ve Bibliyografik Standartlar
 </div>
 </div>
 
-Amacım, kütüphanecilik geleneklerini veri biliminin modern araçlarıyla birleştirerek bilginin geleceğine katkı sağlamaktır.
+<p>Amacım, kütüphanecilik geleneklerini veri biliminin modern araçlarıyla birleştirerek bilginin geleceğine katkı sağlamaktır.</p>
