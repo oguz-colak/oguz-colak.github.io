@@ -20,7 +20,7 @@
             {% endif %}
             <li class="masthead__menu-item">
               {% if link.url == '/contact/' %}
-                <a href="{{ domain }}{{ link.url }}" @click.prevent="$dispatch('open-contact-modal')">{{ link.title }}</a>
+                <a href="{{ domain }}{{ link.url }}" x-on:click.prevent="$dispatch('open-contact-modal')">{{ link.title }}</a>
               {% else %}
                 <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
               {% endif %}

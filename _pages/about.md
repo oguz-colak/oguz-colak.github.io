@@ -15,7 +15,7 @@ redirect_from:
 
 <div x-data="{ active: null }" class="accordion" style="margin-bottom: 2em; margin-top: 1.5em;">
 <div class="accordion-item" style="border: 1px solid #e0e0e0; margin-bottom: 10px; border-radius: 5px; overflow: hidden;">
-<h3 @click="active = active === 1 ? null : 1" style="cursor: pointer; margin: 0; padding: 15px; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; transition: background 0.2s;" onmouseover="this.style.background='#f1f1f1'" onmouseout="this.style.background='#f9f9f9'">
+<h3 x-on:click="active = active === 1 ? null : 1" style="cursor: pointer; margin: 0; padding: 15px; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; transition: background 0.2s;" onmouseover="this.style.background='#f1f1f1'" onmouseout="this.style.background='#f9f9f9'">
 Kütüphane Keşif Sistemleri ve Arayüzleri
 <span x-show="active !== 1" style="font-weight: bold; color: #5fa9ee;">+</span>
 <span x-show="active === 1" style="font-weight: bold; color: #5fa9ee;">-</span>
@@ -25,7 +25,7 @@ Kütüphane Keşif Sistemleri ve Arayüzleri
 </div>
 </div>
 <div class="accordion-item" style="border: 1px solid #e0e0e0; margin-bottom: 10px; border-radius: 5px; overflow: hidden;">
-<h3 @click="active = active === 2 ? null : 2" style="cursor: pointer; margin: 0; padding: 15px; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; transition: background 0.2s;" onmouseover="this.style.background='#f1f1f1'" onmouseout="this.style.background='#f9f9f9'">
+<h3 x-on:click="active = active === 2 ? null : 2" style="cursor: pointer; margin: 0; padding: 15px; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; transition: background 0.2s;" onmouseover="this.style.background='#f1f1f1'" onmouseout="this.style.background='#f9f9f9'">
 Elektronik Kaynakların Yönetimi
 <span x-show="active !== 2" style="font-weight: bold; color: #5fa9ee;">+</span>
 <span x-show="active === 2" style="font-weight: bold; color: #5fa9ee;">-</span>
@@ -35,7 +35,7 @@ Elektronik Kaynakların Yönetimi
 </div>
 </div>
 <div class="accordion-item" style="border: 1px solid #e0e0e0; margin-bottom: 10px; border-radius: 5px; overflow: hidden;">
-<h3 @click="active = active === 3 ? null : 3" style="cursor: pointer; margin: 0; padding: 15px; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; transition: background 0.2s;" onmouseover="this.style.background='#f1f1f1'" onmouseout="this.style.background='#f9f9f9'">
+<h3 x-on:click="active = active === 3 ? null : 3" style="cursor: pointer; margin: 0; padding: 15px; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; transition: background 0.2s;" onmouseover="this.style.background='#f1f1f1'" onmouseout="this.style.background='#f9f9f9'">
 Bilimsel İletişim ve Açık Bilim Altyapıları
 <span x-show="active !== 3" style="font-weight: bold; color: #5fa9ee;">+</span>
 <span x-show="active === 3" style="font-weight: bold; color: #5fa9ee;">-</span>
@@ -45,7 +45,7 @@ Bilimsel İletişim ve Açık Bilim Altyapıları
 </div>
 </div>
 <div class="accordion-item" style="border: 1px solid #e0e0e0; margin-bottom: 10px; border-radius: 5px; overflow: hidden;">
-<h3 @click="active = active === 4 ? null : 4" style="cursor: pointer; margin: 0; padding: 15px; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; transition: background 0.2s;" onmouseover="this.style.background='#f1f1f1'" onmouseout="this.style.background='#f9f9f9'">
+<h3 x-on:click="active = active === 4 ? null : 4" style="cursor: pointer; margin: 0; padding: 15px; background: #f9f9f9; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; transition: background 0.2s;" onmouseover="this.style.background='#f1f1f1'" onmouseout="this.style.background='#f9f9f9'">
 Bağlı Veri (Linked Data) ve Bibliyografik Standartlar
 <span x-show="active !== 4" style="font-weight: bold; color: #5fa9ee;">+</span>
 <span x-show="active === 4" style="font-weight: bold; color: #5fa9ee;">-</span>
