@@ -26,7 +26,7 @@ layout: compress
     </div>
 
     <!-- Alpine Global Components -->
-    <div x-data="{ showModal: false, showScroll: false }" @scroll.window="showScroll = (window.pageYOffset > 300)" @open-contact-modal.window="showModal = true">
+    <div x-data="{ showModal: false, showScroll: false }" @scroll.window="showScroll = (window.pageYOffset > 100)" @open-contact-modal.window="showModal = true">
       
       <!-- Back to Top Button -->
       <button x-show="showScroll" x-transition.opacity.duration.300ms @click="window.scrollTo({top: 0, behavior: 'smooth'})" 
