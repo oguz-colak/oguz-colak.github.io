@@ -16,6 +16,9 @@ main:
     
   - title: "Özgeçmiş"
     url: /cv/
-    
+
+  - title: "İletişim"
+    url: /contact/
+
   # - title: "CV"
   #   url: /cv-json/

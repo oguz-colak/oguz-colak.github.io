@@ -15,11 +15,22 @@ author_profile: true
 {% assign publications_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date:
 '%Y'" %}
 
-{% for year in publications_by_year %}
-<h2 id="{{ year.name }}" class="archive__subtitle">{{ year.name }}</h2>
-<div class="list__wrapper">
-  {% for post in year.items %}
-  {% include publication-single.html %}
+<div x-data="{ search: '' }">
+  <div style="margin-bottom: 2em; position: relative;">
+    <i class="fa fa-search" style="position: absolute; left: 15px; top: 15px; color: #888;"></i>
+    <input type="text" x-model="search" placeholder="Yayınlarda ara..." style="width: 100%; padding: 12px 12px 12px 40px; border: 1px solid #ddd; border-radius: 5px; font-size: 1.1em; background-color: #fafafa;">
+  </div>
+
+  {% for year in publications_by_year %}
+  <div x-show="search === '' || $el.innerText.toLowerCase().includes(search.toLowerCase())">
+    <h2 id="{{ year.name }}" class="archive__subtitle">{{ year.name }}</h2>
+    <div class="list__wrapper">
+      {% for post in year.items %}
+      <div x-show="search === '' || $el.innerText.toLowerCase().includes(search.toLowerCase())">
+        {% include publication-single.html %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
   {% endfor %}
 </div>
-{% endfor %}

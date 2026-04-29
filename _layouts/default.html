@@ -25,6 +25,30 @@ layout: compress
       </footer>
     </div>
 
+    <!-- Alpine Global Components -->
+    <div x-data="{ showModal: false, showScroll: false }" @scroll.window="showScroll = (window.pageYOffset > 300)" @open-contact-modal.window="showModal = true">
+      
+      <!-- Back to Top Button -->
+      <button x-show="showScroll" x-transition.opacity.duration.300ms @click="window.scrollTo({top: 0, behavior: 'smooth'})" 
+              style="position: fixed; bottom: 30px; right: 30px; z-index: 99; padding: 12px 18px; background: #5fa9ee; color: white; border: none; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-weight: bold;">
+        <i class="fa fa-arrow-up"></i>
+      </button>
+
+      <!-- Contact Modal -->
+      <div x-show="showModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center;" x-transition.opacity :style="showModal ? 'display: flex;' : 'display: none;'">
+        <div @click.away="showModal = false" style="background: white; padding: 40px; border-radius: 10px; width: 90%; max-width: 500px; position: relative; box-shadow: 0 10px 25px rgba(0,0,0,0.2);" x-show="showModal" x-transition.scale>
+          <button @click="showModal = false" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 1.5em; cursor: pointer; color: #666;">&times;</button>
+          <h2 style="margin-top: 0; color: #333; border-bottom: none;">Bana Ulaşın</h2>
+          <p style="color: #666; line-height: 1.5; margin-bottom: 20px;">Akademik işbirlikleri, proje fikirleri veya herhangi bir sorunuz için bana e-posta üzerinden ulaşabilirsiniz.</p>
+          <div style="background: #f9f9f9; padding: 15px; border-radius: 5px; border: 1px solid #eee; margin-bottom: 20px; font-size: 0.9em;">
+            <p style="margin: 0 0 10px 0;"><strong>E-posta:</strong> <a href="mailto:oguzcolakk@gmail.com" style="color: #5fa9ee; text-decoration: none;">oguzcolakk@gmail.com</a></p>
+            <p style="margin: 0;"><strong>X (Twitter):</strong> <a href="https://x.com/oguzcolakk" target="_blank" style="color: #5fa9ee; text-decoration: none;">@oguzcolakk</a></p>
+          </div>
+          <button @click="window.location.href='mailto:oguzcolakk@gmail.com'" style="width: 100%; padding: 12px; background: #5fa9ee; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1em; font-weight: bold; transition: background 0.2s;" onmouseover="this.style.background='#4794db'" onmouseout="this.style.background='#5fa9ee'">E-posta Gönder</button>
+        </div>
+      </div>
+    </div>
+
     {% include scripts.html %}
 
   </body>
