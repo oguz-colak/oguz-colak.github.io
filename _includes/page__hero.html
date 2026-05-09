@@ -38,7 +38,7 @@
       {% if author %}
       <div class="hero-author-col">
         {% if author.avatar %}
-          <img src="{% if author.avatar contains '://' %}{{ author.avatar }}{% else %}{{ author.avatar | relative_url }}{% endif %}" class="hero-avatar" alt="{{ author.name }}">
+          <img src="{% if author.avatar contains '://' %}{{ author.avatar }}{% else %}{{ author.avatar | prepend: '/images/' | prepend: base_path }}{% endif %}" class="hero-avatar" alt="{{ author.name }}">
         {% endif %}
         {% if author.name %}
           <div class="hero-author-name">{{ author.name }}</div>
