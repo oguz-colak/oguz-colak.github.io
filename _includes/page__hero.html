@@ -28,23 +28,45 @@
   style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
 >
   {% if page.header.overlay_color or page.header.overlay_image %}
-    <div class="wrapper">
-      <h1 class="page__title" itemprop="headline">
-        {% if paginator %}
-          {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
-        {% else %}
-          {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+    <div class="wrapper hero-grid-wrapper">
+      {% if page.author and site.data.authors[page.author] %}
+        {% assign author = site.data.authors[page.author] %}
+      {% else %}
+        {% assign author = site.author %}
+      {% endif %}
+
+      {% if author %}
+      <div class="hero-author-col">
+        {% if author.avatar %}
+          <img src="{% if author.avatar contains '://' %}{{ author.avatar }}{% else %}{{ author.avatar | relative_url }}{% endif %}" class="hero-avatar" alt="{{ author.name }}">
         {% endif %}
-      </h1>
-      {% if page.excerpt %}
-        <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+        {% if author.name %}
+          <div class="hero-author-name">{{ author.name }}</div>
+        {% endif %}
+        {% if author.bio %}
+          <div class="hero-author-bio">{{ author.bio }}</div>
+        {% endif %}
+      </div>
       {% endif %}
-      {% if site.read_time and page.read_time %}
-        <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-      {% endif %}
-      {% if page.header.cta_url %}
-        <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
-      {% endif %}
+
+      <div class="hero-content-col">
+        <h1 class="page__title" itemprop="headline">
+          {% if paginator %}
+            {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
+          {% else %}
+            {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+          {% endif %}
+        </h1>
+        {% if page.excerpt %}
+          <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+        {% endif %}
+        {% if site.read_time and page.read_time %}
+          <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+        {% endif %}
+        {% if page.header.cta_url %}
+          <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+        {% endif %}
+      </div>
     </div>
   {% else %}
     <img src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
